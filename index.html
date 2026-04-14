@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+  <script>
+    function detectDevice() {
+      if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+        // Mobile → PortfolioBox
+        window.location.href = "https://primeretouchlab.portfoliobox.net";
+      } else {
+        // Desktop → Notion
+        window.location.href = "https://young-primrose-47c.notion.site/Prime-Retouch-Lab-31de2bb09e008039bcadeb3f66491e2e?source=copy_link";
+      }
+    }
+  </script>
+</head>
+<body onload="detectDevice()">
+</body>
+</html>
