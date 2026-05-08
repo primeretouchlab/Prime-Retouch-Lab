@@ -140,6 +140,51 @@ textarea:focus{border-color:var(--border2)}
 .hist-note{background:var(--surface2);border-radius:6px;padding:8px;margin-top:8px;font-size:11px;color:var(--text3);font-style:italic;line-height:1.5}
 .hist-empty{text-align:center;padding:40px 20px;font-family:'DM Mono',monospace;font-size:11px;color:var(--text3);letter-spacing:.06em}
 
+/* ── RESET PAGE ── */
+.reset-streak-wrap{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:13px 16px;margin-bottom:14px;display:flex;align-items:center;gap:12px}
+.reset-streak-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--text2);white-space:nowrap}
+.reset-streak-track{flex:1;height:3px;background:var(--border);border-radius:2px;overflow:hidden}
+.reset-streak-fill{height:100%;background:var(--accent);border-radius:2px;transition:width .5s ease}
+.reset-streak-count{font-family:'DM Mono',monospace;font-size:11px;color:var(--accent);font-weight:500;white-space:nowrap}
+.reset-stats-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:18px}
+.reset-stat{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px;text-align:center}
+.reset-stat-n{font-family:'DM Mono',monospace;font-size:22px;font-weight:500;color:var(--accent)}
+.reset-stat-l{font-size:10px;color:var(--text2);font-family:'DM Mono',monospace;letter-spacing:.06em;margin-top:2px;text-transform:uppercase}
+.reset-subnav{display:flex;gap:4px;margin-bottom:16px;background:var(--surface);border-radius:8px;padding:3px;border:1px solid var(--border)}
+.reset-subnav-btn{flex:1;padding:7px 6px;border:none;border-radius:6px;background:transparent;font-size:10px;font-family:'DM Mono',monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--text2);cursor:pointer;transition:all .2s}
+.reset-subnav-btn.active{background:var(--surface2);color:var(--text)}
+.action-card{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:13px 15px;cursor:pointer;display:flex;align-items:center;gap:12px;text-align:left;transition:all .15s;position:relative;overflow:hidden;margin-bottom:7px}
+.action-card:hover{border-color:var(--border2)}
+.action-card:active{transform:scale(.985)}
+.action-card.used::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:3px 0 0 3px}
+.used-body::before{background:#5aaa6a}.used-psych::before{background:#9080e0}
+.used-biz::before{background:var(--accent)}.used-disc::before{background:var(--accent2)}
+.used-contra::before{background:#c96e6e}
+.aico{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px}
+.aico-body{background:rgba(90,170,106,.12)}.aico-psych{background:rgba(144,128,224,.12)}
+.aico-biz{background:rgba(201,169,110,.12)}.aico-disc{background:rgba(0,173,181,.12)}
+.aico-contra{background:rgba(201,110,110,.12)}
+.action-inf{flex:1;min-width:0}
+.action-name{font-size:13px;font-weight:500;color:var(--text);margin-bottom:2px}
+.action-desc{font-size:11px;color:var(--text2);line-height:1.4}
+.action-cnt{font-family:'DM Mono',monospace;font-size:10px;padding:3px 8px;border-radius:20px;flex-shrink:0;display:none}
+.acnt-body{background:rgba(90,170,106,.12);color:#5aaa6a}.acnt-psych{background:rgba(144,128,224,.12);color:#9080e0}
+.acnt-biz{background:rgba(201,169,110,.12);color:var(--accent)}.acnt-disc{background:rgba(0,173,181,.12);color:var(--accent2)}
+.acnt-contra{background:rgba(201,110,110,.12);color:#c96e6e}
+.rle{display:flex;align-items:center;gap:10px;padding:9px 12px;background:var(--surface);border:1px solid var(--border);border-radius:9px;margin-bottom:5px}
+.rle-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.rle-name{font-size:12px;color:var(--text2);flex:1}
+.rle-time{font-family:'DM Mono',monospace;font-size:10px;color:var(--text2)}
+.rhd{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px;margin-bottom:7px}
+.rhd-hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:7px}
+.rhd-date{font-size:11px;font-weight:500;color:var(--text2);font-family:'DM Mono',monospace}
+.rhd-cnt{font-size:10px;color:var(--text2);font-family:'DM Mono',monospace}
+.rhd-tags{display:flex;flex-wrap:wrap;gap:4px}
+.rhd-tag{font-size:10px;padding:2px 8px;border-radius:20px;font-family:'DM Mono',monospace}
+.r-empty{text-align:center;padding:28px 20px;font-family:'DM Mono',monospace;font-size:11px;color:var(--text2);letter-spacing:.04em;line-height:1.8}
+.r-flash{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(16px);background:var(--surface);border:1px solid var(--border2);border-radius:20px;padding:9px 18px;font-family:'DM Mono',monospace;font-size:11px;color:var(--text);opacity:0;transition:all .25s;z-index:999;white-space:nowrap;pointer-events:none}
+.r-flash.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
 /* RESET */
 .reset-btn{width:100%;margin-top:18px;padding:11px;background:transparent;border:1px solid var(--border);border-radius:9px;color:var(--text3);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:all .2s}
 .reset-btn:hover{border-color:var(--border2);color:var(--text2)}
@@ -150,6 +195,7 @@ textarea:focus{border-color:var(--border2)}
 <div class="nav">
   <button class="nav-btn active" onclick="showPage('today')">Today</button>
   <button class="nav-btn" onclick="showPage('history')">History</button>
+  <button class="nav-btn" onclick="showPage('reset')">Reset</button>
   <button class="nav-btn" onclick="showPage('backup')">Backup</button>
 </div>
 
@@ -434,6 +480,93 @@ textarea:focus{border-color:var(--border2)}
 
   <button class="reset-btn" onclick="resetDay()">↺ New day — reset all tasks</button>
 </div>
+
+<!-- RESET PAGE -->
+<div class="page" id="page-reset">
+  <div class="greeting" style="margin-bottom:3px">Reset</div>
+  <div class="dateline" style="margin-bottom:18px">When the urge hits — open this first</div>
+
+  <!-- IDENTITY CONFIRMATION -->
+  <div style="background:rgba(212,175,55,.06);border:1px solid rgba(212,175,55,.2);border-radius:10px;padding:14px 16px;margin-bottom:16px;display:flex;align-items:center;gap:12px">
+    <div style="font-size:20px;flex-shrink:0">🪞</div>
+    <div style="flex:1">
+      <div style="font-size:10px;font-family:'DM Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:5px">Who I am</div>
+      <div style="font-size:13px;font-weight:500;color:var(--text);line-height:1.5">I don't touch myself. I redirect the energy into something that makes me stronger.</div>
+    </div>
+  </div>
+
+  <div class="reset-streak-wrap">
+    <div class="reset-streak-label">Streak</div>
+    <div class="reset-streak-track"><div class="reset-streak-fill" id="rStreakFill" style="width:0%"></div></div>
+    <div class="reset-streak-count" id="rStreakCount">0 days</div>
+  </div>
+
+  <div class="reset-stats-row">
+    <div class="reset-stat"><div class="reset-stat-n" id="rTodayCount">0</div><div class="reset-stat-l">Today</div></div>
+    <div class="reset-stat"><div class="reset-stat-n" id="rTotalCount">0</div><div class="reset-stat-l">All Time</div></div>
+  </div>
+
+  <div class="reset-subnav">
+    <button class="reset-subnav-btn active" onclick="switchReset('actions',this)">Actions</button>
+    <button class="reset-subnav-btn" onclick="switchReset('todaylog',this)">Today</button>
+    <button class="reset-subnav-btn" onclick="switchReset('rhistory',this)">History</button>
+  </div>
+
+  <!-- ACTIONS -->
+  <div id="rsub-actions">
+
+    <!-- CURIOSITY HIT -->
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:10px;overflow:hidden">
+      <div style="padding:14px 16px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between">
+        <div>
+          <div style="font-size:13px;font-weight:500;color:var(--text);margin-bottom:2px">Curiosity hit</div>
+          <div style="font-size:11px;color:var(--text2)">One fact + a video — tap to load</div>
+        </div>
+        <button id="rCurioBtn" onclick="loadCuriosity()" style="padding:7px 14px;background:var(--accent);border:none;border-radius:20px;color:#000;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;font-weight:500;flex-shrink:0">Load</button>
+      </div>
+      <div id="rFactLoading" style="display:none;padding:20px;text-align:center;font-family:'DM Mono',monospace;font-size:11px;color:var(--text2);letter-spacing:.06em">Loading your curiosity hit...</div>
+      <div id="rFactCard" style="display:none;padding:16px;border-bottom:1px solid var(--border)">
+        <div id="rFactTopic" style="font-size:10px;font-family:'DM Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:8px"></div>
+        <div id="rFactText" style="font-size:14px;font-weight:500;color:var(--text);line-height:1.5;margin-bottom:8px"></div>
+        <div id="rFactWhy" style="font-size:12px;color:var(--text2);line-height:1.6;margin-bottom:12px"></div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <a id="rVideoLink" href="#" target="_blank" onclick="rLogCuriosity()" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:rgba(201,169,110,.1);color:var(--accent);border:1px solid rgba(201,169,110,.3);border-radius:8px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none">▶ Watch video</a>
+          <button onclick="loadCuriosity()" style="padding:8px 14px;background:transparent;border:1px solid var(--border2);border-radius:8px;color:var(--text2);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer">↻ New one</button>
+        </div>
+      </div>
+      <div id="rFactOffline" style="display:none;padding:16px;border-bottom:1px solid var(--border)">
+        <div id="rOfflineTopic" style="font-size:10px;font-family:'DM Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:8px"></div>
+        <div id="rOfflineFact" style="font-size:14px;font-weight:500;color:var(--text);line-height:1.5;margin-bottom:6px"></div>
+        <div id="rOfflineWhy" style="font-size:12px;color:var(--text2);line-height:1.6;margin-bottom:10px"></div>
+        <div style="font-size:10px;font-family:'DM Mono',monospace;color:var(--text3);margin-bottom:10px">Offline — saved fact</div>
+        <button onclick="rLogCuriosity()" style="padding:8px 14px;background:rgba(201,169,110,.1);color:var(--accent);border:1px solid rgba(201,169,110,.3);border-radius:8px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer">✓ Got it</button>
+      </div>
+    </div>
+
+    <!-- BODY RESET -->
+    <button class="action-card" id="rc-body" onclick="rLogBody()">
+      <div class="aico aico-body">💪</div>
+      <div class="action-inf">
+        <div class="action-name">Body reset</div>
+        <div class="action-desc">20–30 push-ups or burpees right now — break the physical pattern immediately</div>
+      </div>
+      <span class="action-cnt acnt-body" id="rcnt-body"></span>
+    </button>
+
+  </div>
+
+  <!-- TODAY LOG -->
+  <div id="rsub-todaylog" style="display:none">
+    <div id="rLogContent"></div>
+  </div>
+
+  <!-- HISTORY -->
+  <div id="rsub-rhistory" style="display:none">
+    <div id="rHistContent"></div>
+  </div>
+</div>
+
+<div class="r-flash" id="rFlash"></div>
 
 <!-- BACKUP PAGE -->
 <div class="page" id="page-backup">
@@ -1008,6 +1141,220 @@ function showPage(name) {
   event.target.classList.add('active');
   if (name === 'history') renderHistory();
   if (name === 'backup') renderBackupStats();
+  if (name === 'reset') renderReset();
+}
+
+// ─── RESET TRACKER ───────────────────────────────────────────────────────────
+
+// Offline saved facts — 20 entries across all topics
+const OFFLINE_FACTS = [
+  {topic:'Etymology',fact:'The word "muscle" comes from the Latin musculus — meaning little mouse. Romans thought the movement of biceps looked like a mouse running under skin.',why:'Language encodes how people saw the world. Every word is a tiny fossil.',video:'etymology of muscle explained'},
+  {topic:'Business',fact:'Most companies that survive their first decade do so by solving a problem they discovered after launch — not the one they started with.',why:'Plans are hypotheses. The market is the experiment.',video:'how businesses pivot and survive'},
+  {topic:'Science',fact:'Your body replaces almost every atom in it over seven years. The you reading this is made of almost entirely different matter than the you from 2018.',why:'You are a pattern, not a thing.',video:'how cells replace themselves science'},
+  {topic:'Psychology',fact:'People who feel they have less time tend to be more generous, not less. Scarcity of time activates social connection instincts.',why:'The brain prioritises meaning when resources feel limited.',video:'psychology of time scarcity generosity'},
+  {topic:'Biology',fact:'Octopuses have three hearts and blue blood. Two hearts pump blood to the gills, one to the rest of the body. When they swim, the body heart stops — which is why they prefer crawling.',why:'Evolution builds strange solutions to universal problems.',video:'octopus biology facts explained'},
+  {topic:'Etymology',fact:'The word "clue" originally meant a ball of yarn. In Greek myth, Theseus used a ball of yarn to find his way out of the labyrinth — so clue came to mean anything that guides you.',why:'Metaphors become literal. Language is solidified thinking.',video:'word origins etymology explained'},
+  {topic:'Business',fact:'The postal system in the 1800s created the first truly scalable business model — separating the cost of delivery from the value of the message.',why:'Infrastructure changes what business is possible.',video:'history of postal service business model'},
+  {topic:'Science',fact:'Light takes about 8 minutes to travel from the sun to earth. When you look at the sun, you are seeing it as it was 8 minutes ago.',why:'We never see the universe as it is — only as it was.',video:'light speed sun to earth explained'},
+  {topic:'Psychology',fact:'The brain cannot tell the difference between a remembered emotion and one happening now. Nostalgia activates the same neural pathways as the original experience.',why:'Memory is not storage. It is re-experience.',video:'how memory and emotion work in the brain'},
+  {topic:'Biology',fact:'Trees in a forest communicate and share nutrients through underground fungal networks. A sick tree can be kept alive by its neighbours sending sugar through the network.',why:'Competition and cooperation exist at the same time in nature.',video:'trees communicate underground fungal network'},
+  {topic:'Etymology',fact:'Panic comes from Pan — the Greek god of wilderness. He was said to let out a terrifying scream in forests that caused irrational fear. Hikers became a common victim.',why:'Ancient gods became everyday words. Mythology is everywhere.',video:'etymology panic word origin'},
+  {topic:'Business',fact:'Amazon was called Cadabra first. The name was changed when a lawyer misheard it as "cadaver" on the phone.',why:'Small perceptions change big trajectories.',video:'Amazon company name history origin'},
+  {topic:'Science',fact:'If you removed all the empty space from every atom in the human body, all seven billion humans would fit in a space smaller than a sugar cube.',why:'Solid matter is mostly nothing. Existence is mostly empty.',video:'atoms empty space explained science'},
+  {topic:'Psychology',fact:'People are more motivated by the threat of losing what they have than by the prospect of gaining something new. This is called loss aversion.',why:'The brain treats loss and gain asymmetrically — loss hits roughly twice as hard.',video:'loss aversion psychology explained'},
+  {topic:'Biology',fact:'Your gut contains roughly 100 trillion bacteria — more than all the cells in your body. They influence your mood, immunity, and even decision-making.',why:'You are not just you. You are an ecosystem.',video:'gut bacteria microbiome explained'},
+  {topic:'Etymology',fact:'The word "salary" comes from the Latin salarium — the payment of salt to Roman soldiers. Salt was so valuable it was used as currency.',why:'What was scarce once is invisible now. Value is context.',video:'salary word origin salt history'},
+  {topic:'Business',fact:'The first McDonald\'s franchise failed — the second operator had too many locations, bad agreements, and went bankrupt. Ray Kroc studied those failures before buying the rights.',why:'The template for success was built from documented failure.',video:'history of McDonalds franchise Ray Kroc'},
+  {topic:'Science',fact:'Honey found in ancient Egyptian tombs — over 3000 years old — was still edible. Honey\'s chemistry makes it nearly impossible for bacteria to survive in it.',why:'Some solutions are so complete they last millennia.',video:'why honey never expires science'},
+  {topic:'Psychology',fact:'When people are asked to explain how something works in detail, they suddenly realise they understood it far less than they thought. This is called the illusion of explanatory depth.',why:'You don\'t know what you don\'t know until you try to explain it.',video:'illusion of explanatory depth psychology'},
+  {topic:'Biology',fact:'The mantis shrimp can see 16 types of colour receptors. Humans have 3. It can also punch with the force of a bullet — fast enough to boil water around its fist.',why:'Other species experience a completely different reality.',video:'mantis shrimp vision and punch explained'}
+];
+
+function rTodayKey() { return new Date().toISOString().slice(0,10); }
+
+function rLoadLog() {
+  try { return JSON.parse(localStorage.getItem('prl_reset_log') || '{}'); }
+  catch(e) { return {}; }
+}
+function rSaveLog(log) {
+  try { localStorage.setItem('prl_reset_log', JSON.stringify(log)); }
+  catch(e) {}
+}
+
+// BODY RESET
+function rLogBody() {
+  const log = rLoadLog();
+  const today = rTodayKey();
+  if (!log[today]) log[today] = [];
+  log[today].push({ id:'body', name:'Body reset', time: new Date().toLocaleTimeString('en-GB', { hour:'2-digit', minute:'2-digit' }) });
+  rSaveLog(log);
+  renderReset();
+  rFlash('Body reset logged — go do it now');
+  try { if (getToken() && getGistId()) pushToGist(false); } catch(e) {}
+}
+
+// CURIOSITY LOG
+function rLogCuriosity() {
+  const log = rLoadLog();
+  const today = rTodayKey();
+  if (!log[today]) log[today] = [];
+  const topic = document.getElementById('rFactTopic')?.textContent || document.getElementById('rOfflineTopic')?.textContent || 'Curiosity';
+  log[today].push({ id:'curio', name:'Curiosity hit — ' + topic, time: new Date().toLocaleTimeString('en-GB', { hour:'2-digit', minute:'2-digit' }) });
+  rSaveLog(log);
+  renderReset();
+  rFlash('Curiosity hit logged ✓');
+  try { if (getToken() && getGistId()) pushToGist(false); } catch(e) {}
+}
+
+// LOAD CURIOSITY — Claude API online, offline fallback
+async function loadCuriosity() {
+  const btn = document.getElementById('rCurioBtn');
+  const loading = document.getElementById('rFactLoading');
+  const card = document.getElementById('rFactCard');
+  const offline = document.getElementById('rFactOffline');
+  btn.textContent = '...';
+  btn.disabled = true;
+  loading.style.display = 'block';
+  card.style.display = 'none';
+  offline.style.display = 'none';
+
+  const topics = ['business history','science','human biology','psychology and behaviour','word etymology','how everyday things are made','contrarian facts about history','nature and evolution','how the human brain works','economics and money'];
+  const topic = topics[Math.floor(Math.random() * topics.length)];
+
+  try {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-20250514',
+        max_tokens: 400,
+        messages: [{
+          role: 'user',
+          content: `Give me one curiosity hit from the topic: "${topic}". Format it as a "do you know..." style question — the kind that makes someone stop and go "wait, really?" before reading the answer. Like: "Do you know the lion isn\'t actually the strongest animal — so why is it called king?" or "Do you know when a grasshopper dies it gets eaten by its own colony?"
+Return ONLY valid JSON, no markdown, no backticks:
+{"topic":"[category name, 1-3 words]","question":"[the do-you-know hook question, 1 sentence, no answer yet]","fact":"[the full answer — surprising, clear, 1-2 sentences]","why":"[why this is mind-expanding or changes how you see things, 1 sentence]","videoSearch":"[a specific 4-7 word YouTube search query for a short explainer on this]"}`
+        }]
+      })
+    });
+    const data = await res.json();
+    const text = data.content?.[0]?.text || '';
+    const parsed = JSON.parse(text.trim());
+    
+    document.getElementById('rFactTopic').textContent = parsed.topic;
+    // Show question first, then answer below
+    document.getElementById('rFactText').innerHTML =
+      '<div style="font-size:13px;font-weight:600;color:var(--accent);line-height:1.5;margin-bottom:10px">' + (parsed.question||'') + '</div>' +
+      '<div style="font-size:13px;color:var(--text);line-height:1.5">' + parsed.fact + '</div>';
+    document.getElementById('rFactWhy').textContent = parsed.why;
+    const ytUrl = 'https://www.youtube.com/results?search_query=' + encodeURIComponent(parsed.videoSearch + ' short explained');
+    document.getElementById('rVideoLink').href = ytUrl;
+    
+    loading.style.display = 'none';
+    card.style.display = 'block';
+  } catch(e) {
+    // Offline or API error — show saved fact
+    loading.style.display = 'none';
+    const idx = (new Date().getDate() + Math.floor(Math.random()*7)) % OFFLINE_FACTS.length;
+    const f = OFFLINE_FACTS[idx];
+    document.getElementById('rOfflineTopic').textContent = f.topic;
+    document.getElementById('rOfflineFact').textContent = f.fact;
+    document.getElementById('rOfflineWhy').textContent = f.why;
+    offline.style.display = 'block';
+  }
+  btn.textContent = '↻ New';
+  btn.disabled = false;
+}
+
+function rFlash(msg) {
+  const el = document.getElementById('rFlash');
+  el.textContent = msg;
+  el.classList.add('show');
+  clearTimeout(el._t);
+  el._t = setTimeout(() => el.classList.remove('show'), 2200);
+}
+
+function rGetStreak(log) {
+  let s = 0;
+  const d = new Date();
+  for (let i = 0; i < 365; i++) {
+    const k = new Date(d.getTime() - i*86400000).toISOString().slice(0,10);
+    if (log[k] && log[k].length > 0) s++;
+    else if (i > 0) break;
+  }
+  return s;
+}
+
+function renderReset() {
+  const log = rLoadLog();
+  const today = rTodayKey();
+  const todayEntries = log[today] || [];
+  const total = Object.values(log).reduce((a,b) => a + b.length, 0);
+  const streak = rGetStreak(log);
+
+  document.getElementById('rTodayCount').textContent = todayEntries.length;
+  document.getElementById('rTotalCount').textContent = total;
+  document.getElementById('rStreakCount').textContent = streak + (streak===1?' day':' days');
+  document.getElementById('rStreakFill').style.width = Math.min(streak/30*100, 100) + '%';
+
+  // Body badge
+  const bodyCount = todayEntries.filter(e=>e.id==='body').length;
+  const badge = document.getElementById('rcnt-body');
+  const card = document.getElementById('rc-body');
+  if (bodyCount) {
+    badge.textContent = '×' + bodyCount;
+    badge.style.display = 'inline-flex';
+    card.className = 'action-card used used-body';
+  } else {
+    badge.style.display = 'none';
+    card.className = 'action-card';
+  }
+
+  // Today log
+  const logEl = document.getElementById('rLogContent');
+  if (logEl) {
+    if (!todayEntries.length) {
+      logEl.innerHTML = '<div class="r-empty">Nothing logged yet today.<br>Open Actions when the urge hits.</div>';
+    } else {
+      let html = '<div class="dateline" style="margin-bottom:10px">Redirected ' + todayEntries.length + ' time' + (todayEntries.length!==1?'s':'') + ' today</div>';
+      todayEntries.slice().reverse().forEach(e => {
+        const color = e.id==='body' ? '#5aaa6a' : '#D4AF37';
+        html += `<div class="rle"><div class="rle-dot" style="background:${color}"></div><span class="rle-name">${e.name}</span><span class="rle-time">${e.time}</span></div>`;
+      });
+      logEl.innerHTML = html;
+    }
+  }
+
+  // History
+  const histEl = document.getElementById('rHistContent');
+  if (histEl) {
+    const days = Object.keys(log).sort((a,b)=>b.localeCompare(a)).slice(0,30);
+    if (!days.length) {
+      histEl.innerHTML = '<div class="r-empty">History appears here<br>after your first logged reset.</div>';
+    } else {
+      histEl.innerHTML = days.map(day => {
+        const entries = log[day];
+        const d = new Date(day + 'T12:00:00');
+        const label = d.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'});
+        const bodyN = entries.filter(e=>e.id==='body').length;
+        const curioN = entries.filter(e=>e.id==='curio').length;
+        return `<div class="rhd">
+          <div class="rhd-hdr"><span class="rhd-date">${label}</span><span class="rhd-cnt">${entries.length} redirect${entries.length!==1?'s':''}</span></div>
+          <div class="rhd-tags">
+            ${bodyN ? `<span class="rhd-tag" style="background:rgba(90,170,106,.1);color:#5aaa6a;border:1px solid rgba(90,170,106,.25)">Body reset ×${bodyN}</span>` : ''}
+            ${curioN ? `<span class="rhd-tag" style="background:rgba(212,175,55,.1);color:var(--accent);border:1px solid rgba(212,175,55,.25)">Curiosity ×${curioN}</span>` : ''}
+          </div>
+        </div>`;
+      }).join('');
+    }
+  }
+}
+
+function switchReset(sub, el) {
+  ['actions','todaylog','rhistory'].forEach(s => {
+    document.getElementById('rsub-'+s).style.display = s===sub ? 'block' : 'none';
+  });
+  document.querySelectorAll('.reset-subnav-btn').forEach(b => b.classList.remove('active'));
+  if (el) el.classList.add('active');
 }
 
 // ─── SERVICE WORKER ───────────────────────────────────────────────────────────
